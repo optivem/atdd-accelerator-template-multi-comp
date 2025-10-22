@@ -41,8 +41,8 @@ describe('UI E2E Test', () => {
     expect(resultText).toMatch(/Title/);
     expect(resultText).toMatch(/Completed/);
     
-    // Verify Completed field contains either true/false or Yes/No
-    expect(resultText).toMatch(/Completed.*(?:true|false|Yes|No)/i);
+    // Verify Completed field contains either Yes or No
+    expect(resultText).toMatch(/Completed.*(?:Yes|No)/);
     
     await browser.close();
   });
