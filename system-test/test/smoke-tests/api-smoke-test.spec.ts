@@ -4,7 +4,7 @@ describe('API Smoke Test', () => {
     // which unfortunately simulates real-life software test projects.
     // This is the starting point for our ATDD Accelerator exercises.
 
-    const response = await fetch('http://localhost:8080/api/echo', {
+    const response = await fetch('http://localhost:3000/api/echo', {
       method: 'GET'
     });
 
