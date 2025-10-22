@@ -29,7 +29,7 @@ Then start the development server:
 npm start
 ```
 
-The app will open at http://localhost:3000.
+The app will open at http://localhost:8080.
 
 **Note:** For local development, make sure the backend service is running on port 8081, or update the proxy setting in `package.json`.
 

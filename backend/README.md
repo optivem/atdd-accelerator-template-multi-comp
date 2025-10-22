@@ -14,6 +14,14 @@ This is the backend API service for the ATDD Accelerator Template, built with Ja
 - `GET /api/echo` - Returns "Echo" for health check
 - `GET /api/todos/{id}` - Fetches a todo item by ID
 
+
+
+## Building
+
+```bash
+./gradlew build
+```
+
 ## Running Locally
 
 ```bash
@@ -21,12 +29,6 @@ This is the backend API service for the ATDD Accelerator Template, built with Ja
 ```
 
 The service will start on port 8081.
-
-## Building
-
-```bash
-./gradlew build
-```
 
 ## Docker
 
