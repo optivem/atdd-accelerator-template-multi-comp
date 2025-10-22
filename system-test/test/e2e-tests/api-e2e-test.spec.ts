@@ -5,7 +5,7 @@ describe('API E2E Test', () => {
     // This is the starting point for our ATDD Accelerator exercises.
 
     // Arrange
-    const request = 'http://localhost:3000/api/todos/4';
+    const request = 'http://localhost:8080/api/todos/4';
 
     // Act
     const response = await fetch(request, {

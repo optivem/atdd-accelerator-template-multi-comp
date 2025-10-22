@@ -3,7 +3,7 @@ services:
   backend:
     image: ghcr.io/optivem/atdd-accelerator-template-multi-comp/backend:latest
     ports:
-      - "8080:8080"
+      - "8081:8081"
     environment:
       - TODOS_API_HOST=https://jsonplaceholder.typicode.com
     networks:
@@ -12,7 +12,7 @@ services:
   frontend:
     image: ghcr.io/optivem/atdd-accelerator-template-multi-comp/frontend:latest
     ports:
-      - "3000:3000"
+      - "8080:8080"
     depends_on:
       - backend
     networks:

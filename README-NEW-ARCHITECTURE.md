@@ -8,7 +8,7 @@ The application has been decomposed from a monolith into the following component
 
 ### Backend (`/backend`)
 - **Technology**: Java 21 with Spring Boot 3.5.6
-- **Port**: 8080
+- **Port**: 8081
 - **Description**: REST API service providing endpoints for echo and todo operations
 - **Key Features**:
   - RESTful API endpoints
@@ -17,7 +17,7 @@ The application has been decomposed from a monolith into the following component
 
 ### Frontend (`/frontend`)
 - **Technology**: React 18 with React Router
-- **Port**: 3000
+- **Port**: 8080
 - **Description**: Single-page application providing the user interface
 - **Key Features**:
   - Home page with welcome message
@@ -50,8 +50,8 @@ docker-compose up
 ```
 
 This will start both the frontend and backend services. Access the application at:
-- Frontend: http://localhost:3000
-- Backend API: http://localhost:8080/api
+- Frontend: http://localhost:8080
+- Backend API: http://localhost:8081/api
 
 ### Running Locally for Development
 
@@ -62,7 +62,7 @@ cd backend
 ./gradlew bootRun
 ```
 
-The backend will be available at http://localhost:8080
+The backend will be available at http://localhost:8081
 
 #### Frontend
 

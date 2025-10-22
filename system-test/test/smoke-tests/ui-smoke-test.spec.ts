@@ -10,7 +10,7 @@ describe('UI Smoke Test', () => {
     const page: Page = await browser.newPage();
     
     // Navigate and get response
-    const response: Response | null = await page.goto('http://localhost:3000/');
+    const response: Response | null = await page.goto('http://localhost:8080/');
     
     // Assert
     expect(response?.status()).toBe(200);

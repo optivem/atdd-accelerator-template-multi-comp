@@ -20,7 +20,7 @@ This is the backend API service for the ATDD Accelerator Template, built with Ja
 ./gradlew bootRun
 ```
 
-The service will start on port 8080.
+The service will start on port 8081.
 
 ## Building
 
@@ -39,12 +39,12 @@ docker build -t backend .
 Run the container:
 
 ```bash
-docker run -p 8080:8080 backend
+docker run -p 8081:8081 backend
 ```
 
 ## Configuration
 
 Configuration can be modified in `src/main/resources/application.yml`:
 
-- `server.port` - Server port (default: 8080)
+- `server.port` - Server port (default: 8081)
 - `todos.api.host` - External todos API host (default: https://jsonplaceholder.typicode.com)

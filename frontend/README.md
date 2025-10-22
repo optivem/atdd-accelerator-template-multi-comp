@@ -31,7 +31,7 @@ npm start
 
 The app will open at http://localhost:3000.
 
-**Note:** For local development, make sure the backend service is running on port 8080, or update the fetch URL in `src/pages/Todos.js`.
+**Note:** For local development, make sure the backend service is running on port 8081, or update the proxy setting in `package.json`.
 
 ## Building for Production
 
@@ -52,7 +52,7 @@ docker build -t frontend .
 Run the container:
 
 ```bash
-docker run -p 3000:3000 frontend
+docker run -p 8080:8080 frontend
 ```
 
 ## Technology Stack

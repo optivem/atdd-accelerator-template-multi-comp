@@ -10,7 +10,7 @@ describe('UI E2E Test', () => {
     const page: Page = await browser.newPage();
     
     // Navigate to the todo page
-    await page.goto('http://localhost:3000/todos');
+    await page.goto('http://localhost:8080/todos');
     
     // 1. Check there's a textbox with id
     const todoIdInput: Locator = page.locator('#todoId');
