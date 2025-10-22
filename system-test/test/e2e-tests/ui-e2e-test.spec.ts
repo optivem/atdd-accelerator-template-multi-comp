@@ -35,14 +35,14 @@ describe('UI E2E Test', () => {
     
     const resultText = await todoResult.textContent();
     
-    // Debug: Print the actual result text
-    console.log('Actual result text:', resultText);
-    
     // Verify the todo data is displayed (more flexible checking)
     expect(resultText).toMatch(/User ID.*1/);
     expect(resultText).toMatch(/ID.*4/);
     expect(resultText).toMatch(/Title/);
     expect(resultText).toMatch(/Completed/);
+    
+    // Verify Completed field contains either true/false or Yes/No
+    expect(resultText).toMatch(/Completed.*(?:true|false|Yes|No)/i);
     
     await browser.close();
   });
