@@ -60,7 +60,8 @@ jobs:
         with:
           tag: ${{ inputs.version }}
           base-image-urls: |
-            ghcr.io/${{ github.repository_owner }}/${{ github.event.repository.name }}/monolith
+            ghcr.io/${{ github.repository_owner }}/${{ github.event.repository.name }}/frontend
+            ghcr.io/${{ github.repository_owner }}/${{ github.event.repository.name }}/backend
 
   tag-docker-images:
     needs: [generate-production-version, check-release-exists, resolve-docker-images]
