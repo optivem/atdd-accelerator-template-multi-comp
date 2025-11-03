@@ -67,10 +67,10 @@ Build the Docker image:
 docker build -t frontend .
 ```
 
-Run the container:
+Run the container on same network as the 'backend' image (in the folder 'backend' > README.md, follow the steps to create the network and run the 'backend' image):
 
 ```shell
-docker run -p 8080:8080 frontend
+docker run -d --name frontend --network hero-network -p 8080:8080 frontend
 ```
 
 ## Technology Stack

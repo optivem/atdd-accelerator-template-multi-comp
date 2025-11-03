@@ -60,16 +60,22 @@ The service will start on port 8081.
 
 ## Docker
 
+Create network:
+
+```shell
+docker network create app-network
+```
+
 Build the Docker image:
 
 ```shell
 docker build -t backend .
 ```
 
-Run the container:
+Run the container on the network:
 
 ```shell
-docker run -p 8081:8081 backend
+docker run -d --name backend --network hero-network -p 8081:8081 backend
 ```
 
 ## Configuration
