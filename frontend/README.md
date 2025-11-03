@@ -21,6 +21,18 @@ This is the frontend UI service for the ATDD Accelerator Template, built with Re
 cd frontend
 ```
 
+Check that you have Powershell 7
+
+```shell
+$PSVersionTable.PSVersion
+```
+
+Check that you have Node.js 22 installed
+
+```shell
+node -v
+```
+
 ## Running Locally
 
 First, install dependencies:

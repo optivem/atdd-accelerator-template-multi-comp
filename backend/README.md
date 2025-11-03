@@ -20,6 +20,29 @@ This is the backend API service for the ATDD Accelerator Template, built with Ja
 ```shell
 cd backend
 ```
+Check that you have Powershell 7
+
+```shell
+$PSVersionTable.PSVersion
+```
+
+Ensure you have JDK 21 installed
+
+```shell
+java -version
+```
+
+Check that JAVA_HOME is set correctly & points to your JDK 21 installation
+
+```shell
+echo $env:JAVA_HOME
+```
+
+Ensure you have Gradle 8.14 installed
+
+```shell
+./gradlew --version
+```
 
 ## Building
 
