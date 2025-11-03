@@ -7,6 +7,11 @@
 [![qa-signoff](https://github.com/optivem/atdd-accelerator-template-multi-comp/actions/workflows/qa-signoff.yml/badge.svg)](https://github.com/optivem/atdd-accelerator-template-multi-comp/actions/workflows/qa-signoff.yml)
 [![prod-stage](https://github.com/optivem/atdd-accelerator-template-multi-comp/actions/workflows/prod-stage.yml/badge.svg)](https://github.com/optivem/atdd-accelerator-template-multi-comp/actions/workflows/prod-stage.yml)
 
+## Components
+
+- Frontend
+- Backend
+
 ## License
 
 [![Unlicense](https://img.shields.io/badge/license-Unlicense-lightgrey.svg)](http://unlicense.org/)
